@@ -40,7 +40,10 @@
         " (click)="onButtonClick()" class="button is-link is-fullwidth">
         Generate!
       </button>
-
+      <!-- structural directive ngIF 
+      if false, hide all things inside div
+      if true, show all things inside div
+      -->
       <div class="box" *ngIf="password">
         <label>Your Password</label>
         <input class="input" [value]="password" />
